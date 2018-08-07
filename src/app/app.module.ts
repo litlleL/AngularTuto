@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AngularComponentTestComponent } from './angular-component-test/angular-component-test.component';
+import { AppareilComponent } from './appareil/appareil.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AngularComponentTestComponent
+    AngularComponentTestComponent,
+    AppareilComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
