@@ -9,10 +9,23 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   isAuth = false;
-  appareilOne = 'Machine à laver';
-  appareilTwo = 'Televiseur';
-  appareilThree = 'Ordinateur';
-  appareilFour = 'Seche linge';
+
+  appareils = [
+    {
+      name: 'Machine à laver',
+      status : 'allumé'
+    },
+    {
+      name: 'Ordinateur',
+      status : 'éteint'
+    },
+    {
+      name: 'Télévision',
+      status : 'allumé'
+    }
+  ];
+
+ 
   title = 'AngularTuto test';
 
   constructor() {
