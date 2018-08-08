@@ -10,8 +10,7 @@ export class AppComponent {
 
   isAuth = false;
 
-  lastUpdate = new Promise(
-    (resolve, reject) => {
+  lastUpdate = new Promise((resolve, reject) => {
       const date = new Date();
         setTimeout(
           () => {
@@ -19,6 +18,7 @@ export class AppComponent {
         }, 2000);
     }
   );
+
   appareils = [
     {
       name: 'Machine à laver',
